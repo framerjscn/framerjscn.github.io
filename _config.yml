@@ -3,12 +3,11 @@
 # ----------------------- #
 
 url: http://framerjscn.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: https://www.google.com/search
-description:
-
+title: Framer 中文网
+subtitle: 革命性的原型设计工具
+author: Framer 中文翻译团队
+simple_search: #https://www.google.com/search
+description: 有关交互创造、发明与灵感
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
@@ -71,7 +70,7 @@ github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false

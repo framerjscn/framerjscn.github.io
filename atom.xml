@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Framer.JS 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-03T18:19:43+08:00</updated>
+  <updated>2014-09-03T21:20:47+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Framer.JS 中文翻译团队]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Other | Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/blog/categories/other/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-03T23:13:01+08:00</updated>
+  <updated>2014-09-03T23:14:43+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -22,7 +22,7 @@
 
 <p>打开 index.html 文件可以查看默认原型——一个随点击弹性跳动的 Logo。想要为原型增加交互或者动画，可以在代码编辑器中编辑 app.js，来试试给 imageLayer 这个层添加一个状态吧：</p>
 
-<pre><code>&lt;code&gt;fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }&lt;/code&gt;
+<pre><code>fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }
 </code></pre>
 
 <p>imageLayer 层将在第四次点击的时候产生移动、旋转及布尔运算效果。</p>

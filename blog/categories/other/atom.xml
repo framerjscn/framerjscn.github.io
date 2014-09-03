@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Other | Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/blog/categories/other/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-03T22:48:02+08:00</updated>
+  <updated>2014-09-03T23:13:01+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -14,11 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
+    <title type="html"><![CDATA[安装 Framer.JS]]></title>
     <link href="http://framerjscn.github.io/blog/2014/09/03/hello-world/"/>
     <updated>2014-09-03T16:27:32+08:00</updated>
     <id>http://framerjscn.github.io/blog/2014/09/03/hello-world</id>
-    <content type="html"><![CDATA[<p>嗨，我是交互设计小分队在这里留下的第一个脚印</p>
+    <content type="html"><![CDATA[<p>一切，从下载 Framer 开始。</p>
+
+<p>打开 index.html 文件可以查看默认原型——一个随点击弹性跳动的 Logo。想要为原型增加交互或者动画，可以在代码编辑器中编辑 app.js，来试试给 imageLayer 这个层添加一个状态吧：</p>
+
+<pre><code>&lt;code&gt;fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }&lt;/code&gt;
+</code></pre>
+
+<p>imageLayer 层将在第四次点击的时候产生移动、旋转及布尔运算效果。</p>
+
+<p>注意：Framer在 WebKit 引擎下效果最佳，所以官方推荐使用 Safari 浏览器。Chrome 等浏览器也可以运行，但由于 Blink 引擎的关系，有些效果显示并不完美。</p>
 ]]></content>
   </entry>
   

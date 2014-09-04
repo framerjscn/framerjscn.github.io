@@ -3,7 +3,7 @@ layout: post
 title: "安装 Framer.JS"
 date: 2014-09-03 16:27:32 +0800
 comments: true
-categories: Other
+categories: 教程
 ---
 
 一切，从下载 Framer 开始。

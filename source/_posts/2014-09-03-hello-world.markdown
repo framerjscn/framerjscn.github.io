@@ -12,6 +12,8 @@ categories: 教程
 
 	fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }
 
+<!--more-->
+
 imageLayer 层将在第四次点击的时候产生移动、旋转及布尔运算效果。
 
 注意：Framer在 WebKit 引擎下效果最佳，所以官方推荐使用 Safari 浏览器。Chrome 等浏览器也可以运行，但由于 Blink 引擎的关系，有些效果显示并不完美。

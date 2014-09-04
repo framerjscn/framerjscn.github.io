@@ -3,13 +3,13 @@
   
   
   <url>
-    <loc>http://framerjscn.github.io/blog/2014/09/03/generator/</loc>
+    <loc>http://framerjscn.github.io/blog/generator.html/</loc>
     <lastmod>2014-09-03T23:17:20+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://framerjscn.github.io/blog/2014/09/03/hello-world/</loc>
+    <loc>http://framerjscn.github.io/blog/hello-world.html/</loc>
     <lastmod>2014-09-03T16:27:32+08:00</lastmod>
     <priority>0.8</priority>
   </url>
@@ -17,14 +17,14 @@
   
   <url>
     <loc>http://framerjscn.github.io/blog/archives/</loc>
-    <lastmod>2014-09-04T11:36:47+08:00</lastmod>
+    <lastmod>2014-09-04T11:53:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://framerjscn.github.io/</loc>
-    <lastmod>2014-09-04T11:36:47+08:00</lastmod>
+    <lastmod>2014-09-04T11:53:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

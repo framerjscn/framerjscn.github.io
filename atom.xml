@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-04T11:36:47+08:00</updated>
+  <updated>2014-09-04T11:53:55+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[生成器]]></title>
-    <link href="http://framerjscn.github.io/blog/2014/09/03/generator/"/>
+    <link href="http://framerjscn.github.io/blog/generator.html/"/>
     <updated>2014-09-03T23:17:20+08:00</updated>
-    <id>http://framerjscn.github.io/blog/2014/09/03/generator</id>
+    <id>http://framerjscn.github.io/blog/generator</id>
     <content type="html"><![CDATA[<p>生成器</p>
 
 <p>Framer 生成器可以导入一个打开的 Sketch 或 Photoshop 文件。只有合并成组合（Group）的图层会被导入，而单个图层则会被自动忽略，同时导入后的效果依然遵从原始的图层层级。</p>
@@ -34,9 +34,9 @@ Sketch 和 PS 中组合的名字必须是唯一的，否则导入时 Framer 将�
   
   <entry>
     <title type="html"><![CDATA[安装 Framer.JS]]></title>
-    <link href="http://framerjscn.github.io/blog/2014/09/03/hello-world/"/>
+    <link href="http://framerjscn.github.io/blog/hello-world.html/"/>
     <updated>2014-09-03T16:27:32+08:00</updated>
-    <id>http://framerjscn.github.io/blog/2014/09/03/hello-world</id>
+    <id>http://framerjscn.github.io/blog/hello-world</id>
     <content type="html"><![CDATA[<p>一切，从下载 Framer 开始。</p>
 
 <p>打开 index.html 文件可以查看默认原型——一个随点击弹性跳动的 Logo。想要为原型增加交互或者动画，可以在代码编辑器中编辑 app.js，来试试给 imageLayer 这个层添加一个状态吧：</p>

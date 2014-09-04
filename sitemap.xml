@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://framerjscn.github.io/blog/2014/09/04/coffeescript/</loc>
+    <lastmod>2014-09-04T14:43:54+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://framerjscn.github.io/blog/2014/09/03/generator/</loc>
     <lastmod>2014-09-03T23:17:20+08:00</lastmod>
     <priority>0.8</priority>
@@ -17,14 +23,14 @@
   
   <url>
     <loc>http://framerjscn.github.io/blog/archives/</loc>
-    <lastmod>2014-09-04T14:23:29+08:00</lastmod>
+    <lastmod>2014-09-04T14:59:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://framerjscn.github.io/</loc>
-    <lastmod>2014-09-04T14:23:29+08:00</lastmod>
+    <lastmod>2014-09-04T14:59:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

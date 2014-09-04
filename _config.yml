@@ -100,4 +100,4 @@ google_analytics_tracking_id:
 facebook_like: false
 
 # comment and share
-comment_share: true
+comment_share: false

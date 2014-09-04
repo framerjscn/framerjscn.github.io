@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 教程 | Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/blog/categories/jiao-cheng/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-04T14:59:05+08:00</updated>
+  <updated>2014-09-04T15:08:32+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -14,10 +14,47 @@
 
   
   <entry>
+    <title type="html"><![CDATA[安装 Framer.JS]]></title>
+    <link href="http://framerjscn.github.io/blog/2014/09/03/Install/"/>
+    <updated>2014-09-03T23:27:32+08:00</updated>
+    <id>http://framerjscn.github.io/blog/2014/09/03/Install</id>
+    <content type="html"><![CDATA[<p>一切，从下载 Framer 开始。</p>
+
+<p>打开 index.html 文件可以查看默认原型——一个随点击弹性跳动的 Logo。想要为原型增加交互或者动画，可以在代码编辑器中编辑 app.js，来试试给 imageLayer 这个层添加一个状态吧：</p>
+
+<pre><code>fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }
+</code></pre>
+
+<p>imageLayer 层将在第四次点击的时候产生移动、旋转及布尔运算效果。</p>
+
+<p>注意：Framer在 WebKit 引擎下效果最佳，所以官方推荐使用 Safari 浏览器。Chrome 等浏览器也可以运行，但由于 Blink 引擎的关系，有些效果显示并不完美。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[生成器]]></title>
+    <link href="http://framerjscn.github.io/blog/2014/09/03/generator/"/>
+    <updated>2014-09-03T14:17:20+08:00</updated>
+    <id>http://framerjscn.github.io/blog/2014/09/03/generator</id>
+    <content type="html"><![CDATA[<h2>生成器</h2>
+
+<p>Framer 生成器可以导入一个打开的 Sketch 或 Photoshop 文件。只有合并成组合（Group）的图层会被导入，而单个图层则会被自动忽略，同时导入后的效果依然遵从原始的图层层级。</p>
+
+<p>修改 Sketch 或 Photoshop 文件后，依然可以方便地重新导入到 Framer。生成器将会自动更新图片以及他们的层级，并且保持你的代码完好。</p>
+
+<p>你的层将默认被导入到 myLayers 对象下。
+Framer 允许通过组合名访问图层：myLayers.object。
+Sketch 和 PS 组合中的组合将作为次级层导入。
+Sketch 和 PS 中有矢量元素的组合导入后将自动允许裁剪。
+Sketch 和 PS 中组合的名字必须是唯一的，否则导入时 Framer 将会重命名它们。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[CoffeeScript]]></title>
-    <link href="http://framerjscn.github.io/blog/2014/09/04/coffeescript/"/>
-    <updated>2014-09-04T14:43:54+08:00</updated>
-    <id>http://framerjscn.github.io/blog/2014/09/04/coffeescript</id>
+    <link href="http://framerjscn.github.io/blog/2014/09/02/coffeescript/"/>
+    <updated>2014-09-02T14:43:54+08:00</updated>
+    <id>http://framerjscn.github.io/blog/2014/09/02/coffeescript</id>
     <content type="html"><![CDATA[<p>本节内容主要介绍 CoffeeScript 的基本语法，或者当做备忘录来使用。通过以下内容，不仅专注于 Framer Studio 的设计师，其他任何想要学习 CoffeeScript 的人都可以在段时间内掌握这门语言。</p>
 
 <p><strong>值得学习 CoffeeScript 的理由：</strong></p>
@@ -282,49 +319,6 @@ for key, value of myObject
 The official CoffeeScript Site
 The Little Book on CoffeeScript
 Code School CoffeeScript Course (Paid)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[生成器]]></title>
-    <link href="http://framerjscn.github.io/blog/2014/09/03/generator/"/>
-    <updated>2014-09-03T23:17:20+08:00</updated>
-    <id>http://framerjscn.github.io/blog/2014/09/03/generator</id>
-    <content type="html"><![CDATA[<h2>生成器</h2>
-
-<p>Framer 生成器可以导入一个打开的 Sketch 或 Photoshop 文件。只有合并成组合（Group）的图层会被导入，而单个图层则会被自动忽略，同时导入后的效果依然遵从原始的图层层级。</p>
-
-<!--more-->
-
-
-<p>修改 Sketch 或 Photoshop 文件后，依然可以方便地重新导入到 Framer。生成器将会自动更新图片以及他们的层级，并且保持你的代码完好。</p>
-
-<p>你的层将默认被导入到 myLayers 对象下。
-Framer 允许通过组合名访问图层：myLayers.object。
-Sketch 和 PS 组合中的组合将作为次级层导入。
-Sketch 和 PS 中有矢量元素的组合导入后将自动允许裁剪。
-Sketch 和 PS 中组合的名字必须是唯一的，否则导入时 Framer 将会重命名它们。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装 Framer.JS]]></title>
-    <link href="http://framerjscn.github.io/blog/2014/09/03/hello-world/"/>
-    <updated>2014-09-03T16:27:32+08:00</updated>
-    <id>http://framerjscn.github.io/blog/2014/09/03/hello-world</id>
-    <content type="html"><![CDATA[<p>一切，从下载 Framer 开始。</p>
-
-<p>打开 index.html 文件可以查看默认原型——一个随点击弹性跳动的 Logo。想要为原型增加交互或者动画，可以在代码编辑器中编辑 app.js，来试试给 imageLayer 这个层添加一个状态吧：</p>
-
-<pre><code>fifth: { y:200, scale:0.8, rotationZ:200, blur:2 }
-</code></pre>
-
-<!--more-->
-
-
-<p>imageLayer 层将在第四次点击的时候产生移动、旋转及布尔运算效果。</p>
-
-<p>注意：Framer在 WebKit 引擎下效果最佳，所以官方推荐使用 Safari 浏览器。Chrome 等浏览器也可以运行，但由于 Blink 引擎的关系，有些效果显示并不完美。</p>
 ]]></content>
   </entry>
   

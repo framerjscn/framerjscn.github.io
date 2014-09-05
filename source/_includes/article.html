@@ -30,9 +30,10 @@
       <span class="plus">
         {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
           <a href="#disqus_thread" onclick="return false;" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ page.url }}{% endif %}">+</a>
-        {% else %}
-          <a href="#">+</a>
         {% endif %}
+        {% if site.duoshuo_short_name and page.comments != false and post.comments != false and site.duoshuo_comments == true %}
+          | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#comments">Comments</a>
+         {% endif %}
       </span>
     </div>
     {% unless page.sharing == false %}

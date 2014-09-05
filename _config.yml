@@ -101,3 +101,7 @@ facebook_like: false
 
 # comment and share
 comment_share: false
+
+# duoshuo comments
+duoshuo_comments: true
+duoshuo_short_name: framerjscn

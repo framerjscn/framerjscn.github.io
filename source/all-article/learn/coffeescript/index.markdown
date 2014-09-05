@@ -10,9 +10,11 @@ footer: true
 
 **值得学习 CoffeeScript 的理由：**
 
-1.简介易读的语法，容易学习和上手。
-2.帮助开发者避开 Javascript 的困难部分。
-3.可使用快捷键进行高效工作。
+* 简介易读的语法，容易学习和上手。
+
+* 帮助开发者避开 Javascript 的困难部分。
+
+* 可使用快捷键进行高效工作。
 
 <!--more-->
 
@@ -239,7 +241,7 @@ ReferenceError … Can’t find variable …：你正在使用一个编译器不
 
 推荐一些优质的站点，帮助那些希望在 CoffeeScript 上走的更远的设计师和开发者：
 
-Convert any Javascript to CoffeeScript
-The official CoffeeScript Site
-The Little Book on CoffeeScript
-Code School CoffeeScript Course (Paid)
+* Convert any Javascript to CoffeeScript
+* The official CoffeeScript Site
+* The Little Book on CoffeeScript
+* Code School CoffeeScript Course (Paid)

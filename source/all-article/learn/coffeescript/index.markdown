@@ -3,8 +3,8 @@ layout: page
 title: "CoffeeScript 简明教程"
 date: 2014-09-04 23:05
 comments: true
-sharing: true
-footer: true
+sharing: false
+footer: false
 ---
 本节内容主要介绍 CoffeeScript 的基本语法，或者当做备忘录来使用。通过以下内容，不仅专注于 Framer Studio 的设计师，其他任何想要学习 CoffeeScript 的人都可以在段时间内掌握这门语言。
 

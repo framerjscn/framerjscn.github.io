@@ -76,8 +76,8 @@
 .articlemeta {
   position: relative;
   float: right;
-  width: 2.5em;
-  height: 2.5em;
+  width: 0em;
+  height: 0em;
   overflow: hidden;
   margin-top: 2em;
   @include box-sizing(border-box);
@@ -86,7 +86,7 @@
     position: absolute;
     top: 0.6em;
     right: 0;
-    width: 2.5em;
+    width: 0em;
     text-align: center;
   }
   > .hide {
@@ -99,7 +99,7 @@
 
 .articlemeta:hover,
 .articlemeta.open, {
-  width: 15.725em;
+  width: 0em;
   > .hide {
     display: block;
   }

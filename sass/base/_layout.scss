@@ -5,8 +5,8 @@
 #main {
   > .content {
     max-width: 800px;
-    padding: 4em 13em 8em 13em;
-    @include transition(.5s);
+    padding: 4em 5.5em 8em 20.5em;
+//    @include transition(.5s);
   }
   > footer {
     height: 0em;
@@ -56,8 +56,8 @@
   }
 }
 
-#sidebar_control:hover + #sidebar,
-#sidebar:hover, #sidebar.open {
+#sidebar_control+ #sidebar,
+#sidebar, #sidebar.open {
   position: fixed;
   left: 0;
   width: 15em;

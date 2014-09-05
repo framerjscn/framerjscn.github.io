@@ -8,7 +8,7 @@ categories:
 {% img /images/1.png %}  
 
 今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。
-
+<!--more-->
 启动 Framer Studio 并打开一个已保存过的项目时，一个小型的 web 服务器就已在后台运行。当想要预览原型，一条本地 URL 将会分配给当前的原型项目。此时，使用处于同一 WiFi 环境下的移动设备浏览器打开这个 URL 链接，一切就搞定了！
 
 使用这种方式的两个优势在于：

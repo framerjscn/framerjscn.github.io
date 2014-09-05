@@ -241,7 +241,7 @@ ReferenceError … Can’t find variable …：你正在使用一个编译器不
 
 推荐一些优质的站点，帮助那些希望在 CoffeeScript 上走的更远的设计师和开发者：
 
-* Convert any Javascript to CoffeeScript
-* The official CoffeeScript Site
-* The Little Book on CoffeeScript
-* Code School CoffeeScript Course (Paid)
+* [Convert any Javascript to CoffeeScript](http://js2coffee.org "Title")
+* [The official CoffeeScript Site](http://coffeescript.org/ "Title")
+* [The Little Book on CoffeeScript](http://arcturo.github.io/library/coffeescript "Title")
+* [Code School CoffeeScript Course](http://coffeescript.codeschool.com/ "Title")(Paid)

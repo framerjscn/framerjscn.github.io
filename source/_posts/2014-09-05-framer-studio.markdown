@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Framer Studio"
+title: "Franmer Studio 1.7新功能——镜像（Mirror）"
 date: 2014-09-05 09:50:13 +0800
 comments: true
 categories: 
 ---
-#Franmer Studio 1.7发布新功能——镜像（Mirror）
-
-{% img /images/post_picture/Framer Studio 1.7 Mirror/1.png %}  
+{% img /images/1.png %}  
 
 今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。
 
@@ -28,7 +26,7 @@ categories:
 * 活跃项目概览
 * 可选离线缓存
 
-{% img /images/post_picture/Framer Studio 1.7 Mirror/2.png %}  
+{% img /images/2.png %}  
 
 ###其他优化
 

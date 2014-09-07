@@ -6,8 +6,8 @@ comments: true
 sharing: true
 footer: true
 ---
-_翻译：镇雷 校对：龙抓槐守望者_
-***
+<p style="color:red">翻译：镇雷 校对：龙抓槐守望者</p>
+
 
 一切，从下载 Framer 开始。
 

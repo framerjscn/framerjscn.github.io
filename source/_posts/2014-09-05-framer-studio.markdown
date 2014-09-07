@@ -5,6 +5,8 @@ date: 2014-09-05 09:50:13 +0800
 comments: true
 categories: 
 ---
+<p style="color:red">翻译：镇雷</p>
+
 {% img /images/1.png %}  
 
 今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。

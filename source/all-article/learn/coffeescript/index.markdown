@@ -6,7 +6,8 @@ comments: true
 sharing: false
 footer: false
 ---
-翻译：镇雷 校对：龙抓槐守望者
+_翻译：镇雷 校对：龙抓槐守望者_
+***
 
 本节内容主要介绍 CoffeeScript 的基本语法，或者当做备忘录来使用。通过以下内容，不仅专注于 Framer Studio 的设计师，其他任何想要学习 CoffeeScript 的人都可以在段时间内掌握这门语言。
 
@@ -17,8 +18,6 @@ footer: false
 * 帮助开发者避开 Javascript 的困难部分。
 
 * 可使用快捷键进行高效工作。
-
-<!--more-->
 
 ##基本语法
 

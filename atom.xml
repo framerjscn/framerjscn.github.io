@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-07T09:45:57+08:00</updated>
+  <updated>2014-09-07T09:50:01+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -18,7 +18,10 @@
     <link href="http://framerjscn.github.io/blog/2014/09/05/framer-studio/"/>
     <updated>2014-09-05T09:50:13+08:00</updated>
     <id>http://framerjscn.github.io/blog/2014/09/05/framer-studio</id>
-    <content type="html"><![CDATA[<p><img src="http://framerjscn.github.io/images/1.png"></p>
+    <content type="html"><![CDATA[<p style="color:red">翻译：镇雷</p>
+
+
+<p><img src="http://framerjscn.github.io/images/1.png"></p>
 
 <p>今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。</p>
 

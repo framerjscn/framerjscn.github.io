@@ -44,7 +44,7 @@ Framer Studio 目前将所有打开的工程都运行在一个内建的 web 服�
 
 * minimal-ui viewport 标签在 iOS8中无法使用，因此它默认是不可用的。
 
-*apple-mobile-vweb-app-capable 标签目前存在一些 bug，也许会导致手机卡死，因此它也是默认不可用的，也许这个问题在 iOS8中会修复。
+* apple-mobile-vweb-app-capable 标签目前存在一些 bug，也许会导致手机卡死，因此它也是默认不可用的，也许这个问题在 iOS8中会修复。
 
 ### 故障检查
 

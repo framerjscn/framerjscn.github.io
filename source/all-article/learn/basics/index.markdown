@@ -6,6 +6,8 @@ comments: true
 sharing: true
 footer: true
 ---
+翻译: 亭决 校对：龙爪槐守望者、镇雷
+
 本节主要通过一些具体的例子介绍 Framer 的基本使用方法以及核心设计原则。下述的所有程序都是用 CoffeeScript 编写的，但大部分在 JavaScript 规则下也同样适用。
 
 ##Framer.JS 基础知识

@@ -13,7 +13,7 @@ footer: true
 
 ##Framer.JS 基础知识
 
-### 图层 Layers
+### 图层
 
 图层通常用于绘制或承载浏览器中的界面元素，其默认形状为矩形。 
 图层除了 x, y 坐标、长度、宽度这些基本属性外，还可以修改其透明度、缩放比例、布尔运算等高级设置。
@@ -22,7 +22,7 @@ footer: true
 	myLayer = new Layer({x:0, y:0, width:128, height:128})
 	myLayer.x = 100
 
-### 层级 Layers
+### 层级
 
 Layers can contain other layers. We call these subLayers.
 图层中所包含嵌套的其他图层称为子图层（SubLayers），子图层继承自父图层。当然，设计师也可以根据需要调整图层之间的层级关系。
@@ -32,7 +32,7 @@ Layers can contain other layers. We call these subLayers.
 	# Adds a subLayer to a layer
 	parentLayer.addSubLayer(childLayer)
 
-### 图像和滚动 Images And Scrolling
+### 图像和滚动
 
 大多数的图层只包含一张图片，并且设置图片的属性非常简单。
 
@@ -47,7 +47,7 @@ Layers can contain other layers. We call these subLayers.
 
 当诸多图层被组合到一起时，称为视图（View），也可以成为 Widgets 或 Components，比如 iOS 中的 TableView、CollectionView等。视图往往被用于不同工程之间的复用。
 
-### 动画 Animation
+### 动画
 
 绝大部分图层的属性都可以设置动画效果。通过设置曲线（curve）能够定义不同的动画类型，比如'linear'（线性）、'ease-in'（缓进）、'spring'（弹性）等。
 
@@ -59,7 +59,7 @@ Layers can contain other layers. We call these subLayers.
     	curve: "spring(100,10,0)",
 	})
 
-### 样式 Styling
+### 样式
 Because Framer runs in the browser, you can simply use html and css to style any layer. 
 Framer运行在浏览器中，因此可以很容易地使用html和css规定图层和样式，如通过 somelayer.html = "hello" 来设置图层的 html 内容。
 而通过编辑图层属性参数，相当于添加 css 样式：layer.style.backgroundColor = "red" or layer.style['background-color'] = "red", 或者像后面的例子一样，一次性修改不同的参数。
@@ -76,7 +76,7 @@ Framer运行在浏览器中，因此可以很容易地使用html和css规定图�
 
 注意：如果你在图层上设定单个样式，别忘了用javascript语法，如：’font-size’应该是layer.fontSize
 
-### 事件 Events
+### 事件
 
 事件可以作用于图层，如用户点击、鼠标悬停，或者是滚动。你可以设置监听这些动作的发生来创建简单或复杂的交互。 
 
@@ -97,7 +97,7 @@ Framer能帮助智能地定义常见的动作，如’Events.TouchStart’将在
 
 值得注意的是，函数中的 event 是一个关于事件触发的对象，它携带事件的附加信息。
 
-### 状态机 State Machine
+### 状态机
 状态机是Framer3中的一个新特性，强大且实用。它允许你为图层叠加多个『状态』——可以理解为图层的参数设置。一个图层也可以有多个状态，你能添加或删除它们，可以在状态间切换或定义动画，也可以随时切换图层的任意一个状态。一个图层所有的状态可以拥有一个共同的动画属性，如曲线动画效果。图层将会有一个“默认”状态，这也是图层在创建时的就设置好的参数。
 
 在图层要被呈现在屏幕上时，除了位置、尺寸等参数以外，状态可以说是最有用的。

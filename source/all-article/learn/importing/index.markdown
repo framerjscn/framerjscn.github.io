@@ -9,7 +9,7 @@ footer: true
 <p style="color:red">翻译：亭决 校对：龙抓槐守望者、镇雷 排版：小和</p>
 
 
-### 概述 overview
+### 概述
 The importer lets you import Sketch or Photoshop documents directly into Framer. 
 你可以直接导入Sketch或者Photoshop的文件到Framer，
 
@@ -17,7 +17,7 @@ Framer允许直接从 Sketch 或 Photoshop 中导入素材，所有图层组都�
 
 只要 Photoshop 或 Sketch 中的图层组没有改名，导入后的所有图层的迭代都会反映到 Framer 中。
 
-### 原则 Principles
+### 原则
 
 * 所有 Sketch/Photoshop中的图层组都会成为 Framer 中的一个图层。
 
@@ -33,7 +33,7 @@ Framer允许直接从 Sketch 或 Photoshop 中导入素材，所有图层组都�
 
 * 组名必须是唯一的
 
-### 要点 Gotchas
+### 要点
 
 * Sketch 或 Photoshop 工程必须保持打开状态才能够导入。
 
@@ -57,7 +57,7 @@ Framer允许直接从 Sketch 或 Photoshop 中导入素材，所有图层组都�
 
 {% img /images/xandy.png %}  
 
-### 兼容性 Compatibility
+### 兼容性
 
 Sketch 3：兼容但不推荐
 

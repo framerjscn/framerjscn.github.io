@@ -193,16 +193,17 @@ $(document).ready(function(){
 
 </body>
 <script>
-    $("document").ready(function(){
+    $(document).ready(function(){
        console.log(2);
        $(".sidebar .logo button").click(function(){
-          if($("#sidebar").is(":hidden"))
+          if($("#sidebar").is(":visible") == true)
           {
-              $("#sidebar").show();
+              $("#sidebar").hide();
               console.log(1);
+
           }
           else
-            $("#sidebar").hide();
+            $("#sidebar").show();
        });
     });
 </script>

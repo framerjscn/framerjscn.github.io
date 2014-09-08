@@ -4,9 +4,9 @@
   <div id="sidebar_control"></div>
   <div id="sidebar">
     <div class="logo">
-      
+
     </div>
-    <div class="content hide">
+    <div class="content ">
       <section role="navigation">
         <header role="banner">{% include header.html %}</header>
         {% include navigation.html %}
@@ -27,4 +27,23 @@
   </div>
   {% include scripts.html %}
 </body>
+<script>
+    $(document).ready(function(){
+
+        console.log($(document).width());
+       if($(document).width() < 600)
+       {
+           console.log(2);
+           $("#sidebar").click(function(){
+               if($(this).hasClass("open")){
+                   $(this).css("height","3em");
+               }else{
+                   $(this).css("height","250px");
+               }
+           });
+       }
+
+
+    });
+</script>
 </html>

@@ -1,5 +1,5 @@
 .hide {
-  display: none;
+  display: block;
 }
 
 #main {
@@ -39,16 +39,20 @@
   width: 4em;
   height: 8em;
   z-index: 32767;
-  overflow: hidden;
+  overflow: auto;
   @include box-sizing(border-box);
   @include transition(.5s);
   .logo {
     position: absolute;
-    right: 1em;
-    top: 6em;
+    right: 0em;
+//    top: 10px;
+//    background: url("../images/menu.png") no-repeat;
+//    height: 3em;
+//    width: 3em;
+
   }
   .content {
-    display: none;
+    //display: none;
     position: absolute;
     right: 1em;
     top: 6em;
@@ -56,16 +60,7 @@
   }
 }
 
-#sidebar_control+ #sidebar,
-#sidebar, #sidebar.open {
-  position: fixed;
-  left: 0;
-  width: 15em;
-  height: 100%;
-  .hide {
-    display: block;
-  }
-}
+
     
 .meta {
   float: left;
@@ -122,6 +117,17 @@ li.entry {
 }
 
 @media only screen and (min-width: 971px) {
+  #sidebar_control+ #sidebar,
+  #sidebar, #sidebar.open {
+    position: fixed;
+    left: 0;
+    width: 15em;
+    height: 100%;
+    overflow: scroll;
+    .hide {
+      display: block;
+    }
+  }
   #sidebar:hover, #sidebar.open {
     + #main {
       > .content {
@@ -134,32 +140,43 @@ li.entry {
   }
 }
 
-@media only screen and (max-width: 970px) {
-  #sidebar_control {
-    display: none;
-  }
-  #sidebar {
-    top: 2em;
-    left: 0;
-    height: 3em;
-    width: 8em;
-    .logo {
-      top: 1em;
-    }
-    .content {
-      left: 3em;
-      top: 5.5em;
-    }
-  }
-  #sidebar:hover, #sidebar.open {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 17em;
-  }
-}
+//@media only screen and (max-width: 970px) {
+//  #sidebar_control {
+//    display: none;
+//  }
+//  #sidebar {
+//    top: 2em;
+//    left: 0;
+//    height: 3em;
+//    width: 8em;
+//    .logo {
+//      top: 1em;
+//    }
+//    .content {
+//      left: 3em;
+//      top: 5.5em;
+//    }
+//  }
+//  #sidebar:hover, #sidebar.open {
+//    left: 0;
+//    top: 0;
+//    width: 100%;
+//    height: 17em;
+//  }
+//}
 
 @media only screen and (max-width: 970px) and (min-width: 601px) {
+  #sidebar_control+ #sidebar,
+  #sidebar, #sidebar.open {
+    position: fixed;
+    left: 0;
+    width: 15em;
+    height: 100%;
+    overflow: scroll;
+    .hide {
+      display: block;
+    }
+  }
   #main {
     > .content {
       padding: 10em 5em 8em 5em;
@@ -195,22 +212,34 @@ li.entry {
       padding: 2em 1.5em 0 1.5em;
     }
   }
+
   #sidebar {
+    .logo{
+      background: url("../images/menu.png") no-repeat;
+      background-position: center center;
+      height: 2em;
+      width: 2em;
+      top: 8px;
+      right: 1em;
+    }
+    position: static;
+    width: 100%;
+    height: 3em;
     @include transition(0s);
     .content{
       position: static;
-      padding: 5.5em 0 0 3em;
+      padding: 3em 0 0 3em;
       height: auto;
     }
   }
-  #sidebar:hover,
-  #sidebar.open {
-    position: static;
-    height: auto;
-    + #main > .content {
-      padding: 2em 1.5em 8em 1.5em;
-    }
-  }
+//  #sidebar:hover,
+//  #sidebar.open {
+//    position: static;
+//    height: auto;
+//    + #main > .content {
+//      padding: 2em 1.5em 8em 1.5em;
+//    }
+//  }
   .meta {
     float: none;
     margin: 0;

@@ -225,13 +225,13 @@ $(document).ready(function(){
 </body>
 <script>
     $("document").ready(function(){
+       console.log(2);
        $(".sidebar .logo button").click(function(){
           if($("#sidebar").is(":hidden"))
           {
               $("#sidebar").show();
               console.log(1);
           }
-
           else
             $("#sidebar").hide();
        });

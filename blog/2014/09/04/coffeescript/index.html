@@ -479,14 +479,20 @@ $(document).ready(function(){
 </body>
 <script>
     $(document).ready(function(){
-       console.log(2);
-       $("#sidebar").click(function(){
-           if($(this).hasClass("open")){
-               $(this).css("height","3em");
-           }else{
-               $(this).css("height","160px");
-           }
-       });
+
+        console.log($(document).width());
+       if($(document).width() < 600)
+       {
+           console.log(2);
+           $("#sidebar").click(function(){
+               if($(this).hasClass("open")){
+                   $(this).css("height","3em");
+               }else{
+                   $(this).css("height","160px");
+               }
+           });
+       }
+
 
     });
 </script>

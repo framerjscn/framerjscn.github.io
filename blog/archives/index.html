@@ -195,6 +195,13 @@ $(document).ready(function(){
 <script>
     $(document).ready(function(){
        console.log(2);
+       $("#sidebar").click(function(){
+           if($(this).hasClass("open")){
+               $(this).css("height","100%");
+           }else{
+               $(this).css("height","4em");
+           }
+       });
 //       $("#sidebar").toggle(function(){
 //
 //       },function(){

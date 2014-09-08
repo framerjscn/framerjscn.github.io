@@ -33,9 +33,9 @@
   <div id="sidebar_control"></div>
   <div id="sidebar">
     <div class="logo">
-      
+      <button>1</button>
     </div>
-    <div class="content hide">
+    <div class="content ">
       <section role="navigation">
         <header role="banner"><hgroup>
   <h1><a href="/">首页</a></h1>
@@ -226,4 +226,14 @@ $(document).ready(function(){
 </script>
 
 </body>
+<script>
+    $("document").ready(function(){
+       $(".sidebar .logo button").click(function(){
+          if($("#sidebar").is(".hidden"))
+              $("#sidebar").show();
+          else
+            $("#sidebar").hide();
+       });
+    });
+</script>
 </html>

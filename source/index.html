@@ -13,8 +13,10 @@ layout: default
     {% if forloop.index == 1 %}
       {% assign first = 'true' %}
       {% assign content = post.content %}
-    {% endif %}
     {% include article.html %}
+    {% endif %}
+
+
   {% endfor %}
 </ul>
 <div class="pagination">

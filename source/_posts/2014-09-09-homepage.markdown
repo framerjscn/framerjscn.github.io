@@ -1,0 +1,8 @@
+---
+layout: post
+title: "欢迎"
+date: 2014-09-09 09:34:21 +0800
+comments: true
+categories: 
+---
+{% img /images/homepage.png %} 

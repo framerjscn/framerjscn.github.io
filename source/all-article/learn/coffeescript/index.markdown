@@ -6,7 +6,7 @@ comments: true
 sharing: false
 footer: false
 ---
-<p style="color:red">翻译：镇雷 校对：龙抓槐守望者 排版：小和</p>
+<p style="color:#4cb4ec">翻译：镇雷 校对：龙抓槐守望者 排版：Daniel</p>
 
 
 本节内容主要介绍 CoffeeScript 的基本语法，或者当做备忘录来使用。通过以下内容，不仅专注于 Framer Studio 的设计师，其他任何想要学习 CoffeeScript 的人都可以在段时间内掌握这门语言。

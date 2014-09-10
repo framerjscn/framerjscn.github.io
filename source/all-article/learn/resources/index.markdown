@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-<p style="color:red">翻译：镇雷 校对：龙抓槐守望者 排版：小和</p>
+<p style="color:#4cb4ec">翻译：镇雷 校对：龙抓槐守望者 排版：Daniel</p>
 
 使用下面的工具来优化你的原型。
 

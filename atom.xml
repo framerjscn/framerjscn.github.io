@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Framer 中文网]]></title>
-  <link href="/atom.xml" rel="self"/>
-  <link href="/"/>
-  <updated>2014-09-10T21:17:38+08:00</updated>
-  <id>/</id>
+  <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
+  <link href="http://framerjscn.github.io/"/>
+  <updated>2014-09-10T23:35:01+08:00</updated>
+  <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
     
@@ -15,22 +15,22 @@
   
   <entry>
     <title type="html"><![CDATA[欢迎]]></title>
-    <link href="/blog/2014/09/09/homepage/"/>
+    <link href="http://framerjscn.github.io/blog/2014/09/09/homepage/"/>
     <updated>2014-09-09T09:34:21+08:00</updated>
-    <id>/blog/2014/09/09/homepage</id>
-    <content type="html"><![CDATA[<p><img src="//images/homepage.png"></p>
+    <id>http://framerjscn.github.io/blog/2014/09/09/homepage</id>
+    <content type="html"><![CDATA[<p><img src="http://framerjscn.github.io/images/homepage.png"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Franmer Studio 1.7新功能——镜像（Mirror）]]></title>
-    <link href="/blog/2014/09/05/framer-studio/"/>
+    <link href="http://framerjscn.github.io/blog/2014/09/05/framer-studio/"/>
     <updated>2014-09-05T09:50:13+08:00</updated>
-    <id>/blog/2014/09/05/framer-studio</id>
+    <id>http://framerjscn.github.io/blog/2014/09/05/framer-studio</id>
     <content type="html"><![CDATA[<p style="color: #4cb4ec">翻译：镇雷</p>
 
 
-<p><img src="//images/1.png"></p>
+<p><img src="http://framerjscn.github.io/images/1.png"></p>
 
 <p>今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。</p>
 
@@ -60,7 +60,7 @@
 </ul>
 
 
-<p><img src="//images/2.png"></p>
+<p><img src="http://framerjscn.github.io/images/2.png"></p>
 
 <h3>其他优化</h3>
 

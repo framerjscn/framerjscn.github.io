@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   
-  <link rel="canonical" href="/all-article/framerjs/generator">
+  <link rel="canonical" href="http://framerjscn.github.io/all-article/framerjs/generator">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Framer 中文网" type="application/atom+xml">
@@ -47,7 +47,9 @@
 </header>
         
 <ul class="main-navigation">
+
   <li><a href="/blog/archives">翻译文章</a></li>
+
 </ul>
 
 
@@ -75,19 +77,19 @@
 </section><section>
   <h2>文档</h2>
   <ul id="docs_posts">
-      <li class="post"><a href="http://framerjs.com/docs.html#layers">图层(Layers)</a></li>
-      <li class="post"><a href="http://framerjs.com/docs.html#animations">动画(Animations)</a></li>
-      <li class="post"><a href="http://framerjs.com/docs.html#events">事件(Events)</a></li>
-      <li class="post"><a href="http://framerjs.com/docs.html#utilities">函数库(Utilities)</a></li>
-      <li class="post"><a href="http://framerjs.com/docs.html#defaults">默认对象(Defaults)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#layers" target="_blank">图层(Layers)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#animations" target="_blank">动画(Animations)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#events" target="_blank">事件(Events)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#utilities" target="_blank">函数库(Utilities)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#defaults" target="_blank">默认对象(Defaults)</a></li>
   </ul>
 </section><section>
   <h2>官方链接</h2>
     <ul id="learn_posts">
-      <li class="post"><a href="http://framerjs.com">官方网站</a></li>
-      <li class="post"><a href="http://examples.framerjs.com">实例</a></li>
-      <li class="post"><a href="https://www.facebook.com/groups/framerjs">Facebook Group</a></li>
-      <li class="post"><a href="http://framerjs.tumblr.com">官方博客</a></li>
+      <li class="post"><a href="http://framerjs.com" target="_blank">官方网站</a></li>
+      <li class="post"><a href="http://examples.framerjs.com" target="_blank">实例</a></li>
+      <li class="post"><a href="https://www.facebook.com/groups/framerjs" target="_blank">Facebook Group</a></li>
+      <li class="post"><a href="http://framerjs.tumblr.com" target="_blank">官方博客</a></li>
   </ul>
 </section>
       
@@ -98,8 +100,8 @@
       <article role="article">
   
   <header>
-    <div class="back"><a href="/" onclick="history.go(-1);return false;">← Back</a></div>
-    <h1 class="entry-title">生成器</h1>
+
+      <h1 class="entry-title">生成器</h1>
   </header>
   
   <div class="entry-content"><p style="color:#4cb4ec">翻译：镇雷 校对：龙抓槐守望者 排版：Daniel</p>
@@ -201,7 +203,7 @@ $(document).ready(function(){
 <script>
     $(document).ready(function(){
 
-        console.log($(document).width());
+
        if($(document).width() < 600)
        {
            console.log(2);
@@ -213,6 +215,12 @@ $(document).ready(function(){
                }
            });
        }
+
+       $("#sidebar li a").click(function(){
+           console.log($(this).index());
+           console.log("1");
+           $("#sidebar li").eq($(this).index()).addClass("choosen").siblings().removeClass("choosen");
+       })
 
 
     });

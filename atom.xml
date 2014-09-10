@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-10T17:25:33+08:00</updated>
+  <updated>2014-09-10T17:32:46+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -27,7 +27,7 @@
     <link href="http://framerjscn.github.io/blog/2014/09/05/framer-studio/"/>
     <updated>2014-09-05T09:50:13+08:00</updated>
     <id>http://framerjscn.github.io/blog/2014/09/05/framer-studio</id>
-    <content type="html"><![CDATA[<p style="color:#4cb4ec">翻译：镇雷</p>
+    <content type="html"><![CDATA[<p style="color:red">翻译：镇雷</p>
 
 
 <p><img src="http://framerjscn.github.io/images/1.png"></p>

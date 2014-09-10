@@ -5,7 +5,7 @@ date: 2014-09-05 09:50:13 +0800
 comments: true
 categories: 
 ---
-<p style="color:4cb4ec">翻译：镇雷</p>
+<p style="color:#4cb4ec">翻译：镇雷</p>
 
 {% img /images/1.png %}  
 

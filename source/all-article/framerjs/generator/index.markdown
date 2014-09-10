@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-<p style="color:4cb4ec">翻译：镇雷 校对：龙抓槐守望者 排版：Daniel</p>
+<p style="color:#4cb4ec">翻译：镇雷 校对：龙抓槐守望者 排版：Daniel</p>
 
 
 Framer 生成器可以导入一个打开的 Sketch 或 Photoshop 文件。只有合并成组合（Group）的图层会被导入，而单个图层则会被自动忽略，同时导入后的效果依然遵从原始的图层层级。

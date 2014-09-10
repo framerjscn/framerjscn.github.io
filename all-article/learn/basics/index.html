@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Framer.JS基础 - Framer 中文网</title>
+  <meta name="author" content="Framer 中文翻译团队">
+
+  
+  <meta name="description" content="翻译: 亭决 校对：龙爪槐守望者、镇雷 排版：Daniel 本节主要通过一些具体的例子介绍 Framer 的基本使用方法以及核心设计原则。下述的所有程序都是用 CoffeeScript 编写的，但大部分在 JavaScript 规则下也同样适用。 Framer.JS 基础知识 图层 &hellip;">
+  
+<meta name="keywords" content="framer,framerjs,framerjs,framerjs中文,framer.js,framerjs教程">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  
+  <link rel="canonical" href="/all-article/learn/basics">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Framer 中文网" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <div id="sidebar_control"></div>
+  <div id="sidebar">
+    <div class="logo">
+
+    </div>
+    <div class="content ">
+      <section role="navigation">
+        <header role="banner"><hgroup>
+  <h1><a href="/">首页</a></h1>
+  
+    <h2>革命性的原型设计工具</h2>
+  
+</hgroup>
+
+</header>
+        
+<ul class="main-navigation">
+  <li><a href="http://framerjs.com">官方网站（软件下载）</a></li>	
+  <li><a href="http://examples.framerjs.com">实例</a></li>	
+  <li><a href="https://www.facebook.com/groups/framerjs">官方论坛</a></li>
+  <li><a href="http://framerjs.tumblr.com">官方博客</a></li>
+   <li><a href="/blog/archives">翻译文章</a></li>
+</ul>
+
+
+      </section>
+      
+        <section>
+  <h2>Framer.js</h2>
+    <ul id="framerjs_posts">
+      <li class="post">
+        <a href="/all-article/framerjs/install">安装</a>
+      </li>
+      <li class="post">
+        <a href="/all-article/framerjs/generator">生成器</a>
+      </li>
+  </ul>
+</section><section>
+  <h2>学习</h2>
+    <ul id="learn_posts">
+      <li class="post"><a href="/all-article/learn/basics"> Framer.JS 基础</a></li>
+      <li class="post"><a href="/all-article/learn/importing">资源导入</a></li>
+      <li class="post"><a href="/all-article/learn/Mirror">镜像（Mirror）</a></li>
+      <li class="post"><a href="/all-article/learn/coffeescript">CoffeeScript 简明教程</a></li>
+      <li class="post"><a href="/all-article/learn/resources">其他资源</a></li>
+  </ul>
+</section><section>
+  <h2>文档</h2>
+  <ul id="docs_posts">
+      <li class="post"><a href="http://framerjs.com/docs.html#layers">图层(Layers)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#animations">动画(Animations)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#events">事件(Events)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#utilities">函数库(Utilities)</a></li>
+      <li class="post"><a href="http://framerjs.com/docs.html#defaults">默认对象(Defaults)</a></li>
+  </ul>
+</section>
+      
+    </div>
+  </div>
+  <div id="main">
+    <div class="content">
+      <article role="article">
+  
+  <header>
+    <div class="back"><a href="/" onclick="history.go(-1);return false;">← Back</a></div>
+    <h1 class="entry-title">Framer.JS基础</h1>
+  </header>
+  
+  <div class="entry-content"><p style="color:#4cb4ec">翻译: 亭决 校对：龙爪槐守望者、镇雷 排版：Daniel</p>
+
+
+<p>本节主要通过一些具体的例子介绍 Framer 的基本使用方法以及核心设计原则。下述的所有程序都是用 CoffeeScript 编写的，但大部分在 JavaScript 规则下也同样适用。</p>
+
+<h2>Framer.JS 基础知识</h2>
+
+<h3>图层</h3>
+
+<p>图层通常用于绘制或承载浏览器中的界面元素，其默认形状为矩形。
+图层除了 x, y 坐标、长度、宽度这些基本属性外，还可以修改其透明度、缩放比例、布尔运算等高级设置。</p>
+
+<pre><code># This creates a new layer, and sets its x property to 100
+myLayer = new Layer({x:0, y:0, width:128, height:128})
+myLayer.x = 100
+</code></pre>
+
+<h3>层级</h3>
+
+<p>Layers can contain other layers. We call these subLayers.
+图层中所包含嵌套的其他图层称为子图层（SubLayers），子图层继承自父图层。当然，设计师也可以根据需要调整图层之间的层级关系。
+比如：如果你将父图层的的透明度变为0.5，其他所有子图层的透明度都将有被设置为透明度0.5。
+一个图层的坐标基于它的父图层，也就是说如果一个图层的x，y坐标都是0，它的位置将在父图层的左上角。</p>
+
+<pre><code># Adds a subLayer to a layer
+parentLayer.addSubLayer(childLayer)
+</code></pre>
+
+<h3>图像和滚动</h3>
+
+<p>大多数的图层只包含一张图片，并且设置图片的属性非常简单。</p>
+
+<pre><code># Set an image
+layer = new Layer({width:100, height:100, image:"my-image.png"})
+</code></pre>
+
+<p>另外，图层中的内容可以通过设置『scroll』关键字来设置其是否允许滚动。</p>
+
+<pre><code># Make layer scrollable
+layer = new Layer({width:100, height:100})
+layer.scroll = true
+</code></pre>
+
+<p>当诸多图层被组合到一起时，称为视图（View），也可以成为 Widgets 或 Components，比如 iOS 中的 TableView、CollectionView等。视图往往被用于不同工程之间的复用。</p>
+
+<h3>动画</h3>
+
+<p>绝大部分图层的属性都可以设置动画效果。通过设置曲线（curve）能够定义不同的动画类型，比如&#8217;linear&#8217;（线性）、&#8217;ease-in&#8217;（缓进）、&#8217;spring&#8217;（弹性）等。</p>
+
+<p>你可以通过如：myAnimation = layer.animate({..})或layer.animate({..})来准确定义一个动画。</p>
+
+<pre><code># Creates an animation using a spring
+springUp = layer.animate({
+    properties: {y: layer.y + 100},
+    curve: "spring(100,10,0)",
+})
+</code></pre>
+
+<h3>样式</h3>
+
+<p>Because Framer runs in the browser, you can simply use html and css to style any layer.
+Framer运行在浏览器中，因此可以很容易地使用html和css规定图层和样式，如通过 somelayer.html = &ldquo;hello&rdquo; 来设置图层的 html 内容。
+而通过编辑图层属性参数，相当于添加 css 样式：layer.style.backgroundColor = &ldquo;red&rdquo; or layer.style[&lsquo;background-color&rsquo;] = &ldquo;red&rdquo;, 或者像后面的例子一样，一次性修改不同的参数。</p>
+
+<p>值得注意的是，与大多数使用数值作为变量内容的 Framer 属性不同，样式需要明确的 css 变量内容来指定：layer.style.lineHeight = &ldquo;16px&#8221;。你还可以通过如 layer.classList.add(&#8220;myClass&rdquo;)来为图层设置一个 css 类，以便从外部引入 css 样式文件。</p>
+
+<pre><code># Set multiple layer styles at once
+layer.style = {
+    "font-size": "18px",
+    "text-align": "center",
+    "line-height": "24px",
+    "color": "red"
+}
+</code></pre>
+
+<p>注意：如果你在图层上设定单个样式，别忘了用javascript语法，如：’font-size’应该是layer.fontSize</p>
+
+<h3>事件</h3>
+
+<p>事件可以作用于图层，如用户点击、鼠标悬停，或者是滚动。你可以设置监听这些动作的发生来创建简单或复杂的交互。</p>
+
+<p>Framer 提供了很多可以监听的时间，最常用也是最有意思的有点击、双击、鼠标悬停、鼠标离开和键盘按键等。而移动浏览器上的特殊触摸事件有：触摸开始，触摸移动，触摸结束。
+Framer能帮助智能地定义常见的动作，如’Events.TouchStart’将在PC上被视为鼠标按下，在移动端则是触摸的开始。</p>
+
+<p>监听一个事件可以使用 layer.on event,->…，停止则用 layer.off event,->…，允许同时定义多个事件。</p>
+
+<pre><code># Listen to multiple events on a layer
+layer.on Events.TouchStart, (event) -&gt;
+    console.log "Touch/click start happened on layer"
+
+layer.on Events.TouchMove, (event) -&gt;
+    console.log "Touch/click is moving!"
+
+layer.on Events.TouchEnd, (event) -&gt;
+    console.log "The touch has ended :("
+</code></pre>
+
+<p>值得注意的是，函数中的 event 是一个关于事件触发的对象，它携带事件的附加信息。</p>
+
+<h3>状态机</h3>
+
+<p>状态机是Framer3中的一个新特性，强大且实用。它允许你为图层叠加多个『状态』——可以理解为图层的参数设置。一个图层也可以有多个状态，你能添加或删除它们，可以在状态间切换或定义动画，也可以随时切换图层的任意一个状态。一个图层所有的状态可以拥有一个共同的动画属性，如曲线动画效果。图层将会有一个“默认”状态，这也是图层在创建时的就设置好的参数。</p>
+
+<p>在图层要被呈现在屏幕上时，除了位置、尺寸等参数以外，状态可以说是最有用的。
+举个例子，我们用状态机来为一个图层添加三个状态，再赋予点击时每个状态之间切换动画。</p>
+
+<p> # Add three states to the layer
+imageLayer.states.add
+    tooSmall:  {scale: 0.8}
+    tooBig:    {scale: 1.2}
+    justRight: {scale: 1.0}</p>
+
+<pre><code># Set the default animation options for the layer
+imageLayer.states.animationOptions =
+    curve: "spring(200,12,10)"
+
+# On a click, go to the next state
+imageLayer.on Events.Click, (event) -&gt;
+    imageLayer.states.next()
+</code></pre>
+</div>
+  
+  <footer>
+    <div class="articlemeta">
+      <span class="hide">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-04T23:04:00+08:00" pubdate data-updated="true"></time>
+      </span>
+      <span class="plus">
+        
+          <a href="#">+</a>
+        
+      </span>
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+
+      
+    </div>
+  </footer>
+  
+</article>
+
+
+    </div>
+    <footer role="contentinfo"><div class="content">
+</div>
+
+</footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <script src="/javascripts/modernizr-2.0.js"></script>
+<script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+<script src="/javascripts/libs/respond.js" type="text/javascript"></script>
+<script src="/javascripts/octopress.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var userAgent = navigator.userAgent.toLowerCase();
+  var isiPhone = (userAgent.indexOf('iphone') != -1 || userAgent.indexOf('ipod') != -1) ? true : false;
+  var isAndroid = (userAgent.indexOf('android') != -1) ? true : false;
+  clickEvent = (isiPhone || isAndroid) ? 'touchstart' : 'click';
+  $('#sidebar').on(clickEvent, function() {
+    $(this).toggleClass('open');
+  });
+  $('.articlemeta').on(clickEvent, function() {
+    toggleDisqus();
+    $(this).toggleClass('open');
+  });
+});
+</script>
+
+</body>
+<script>
+    $(document).ready(function(){
+
+        console.log($(document).width());
+       if($(document).width() < 600)
+       {
+           console.log(2);
+           $("#sidebar").click(function(){
+               if($(this).hasClass("open")){
+                   $(this).css("height","3em");
+               }else{
+                   $(this).css("height","250px");
+               }
+           });
+       }
+
+
+    });
+</script>
+</html>

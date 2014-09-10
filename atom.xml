@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Framer 中文网]]></title>
+  <link href="/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2014-09-10T18:22:01+08:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[Framer 中文翻译团队]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[欢迎]]></title>
+    <link href="/blog/2014/09/09/homepage/"/>
+    <updated>2014-09-09T09:34:21+08:00</updated>
+    <id>/blog/2014/09/09/homepage</id>
+    <content type="html"><![CDATA[<p><img src="//images/homepage.png"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Franmer Studio 1.7新功能——镜像（Mirror）]]></title>
+    <link href="/blog/2014/09/05/framer-studio/"/>
+    <updated>2014-09-05T09:50:13+08:00</updated>
+    <id>/blog/2014/09/05/framer-studio</id>
+    <content type="html"><![CDATA[<p style="color: #4cb4ec">翻译：镇雷</p>
+
+
+<p><img src="//images/1.png"></p>
+
+<p>今天，我们兴奋地发布最新版的 Framer Studio，以及一个强大的新功能。镜像功能可以使你的原型在iPhone、iPad、Android 和其他设备上运行——只要是使用 WebKit 引擎的浏览器。</p>
+
+<!--more-->
+
+
+<p>启动 Framer Studio 并打开一个已保存过的项目时，一个小型的 web 服务器就已在后台运行。当想要预览原型，一条本地 URL 将会分配给当前的原型项目。此时，使用处于同一 WiFi 环境下的移动设备浏览器打开这个 URL 链接，一切就搞定了！</p>
+
+<p>使用这种方式的两个优势在于：</p>
+
+<ul>
+<li>通过本地WiFi 同步非常便捷，在 Mac 上保存原型，它会自动在移动设备上刷新。</li>
+<li>你可以将原型保存在设备的首页上，以便快速进入。同时，我们还为它设计了一个优雅的触摸按钮。</li>
+</ul>
+
+
+<h3>新版本特性概述：</h3>
+
+<ul>
+<li>可运行于任何搭载 WebKit 浏览器的设备上</li>
+<li>内建 web 服务器</li>
+<li>通过 WiFi 访问</li>
+<li>快速重载</li>
+<li>通过 mail 和消息来分享 URL</li>
+<li>活跃项目概览</li>
+<li>可选离线缓存</li>
+</ul>
+
+
+<p><img src="//images/2.png"></p>
+
+<h3>其他优化</h3>
+
+<ul>
+<li>文件保存现在更加快速</li>
+<li>与 Git 和 Dropbox 更好的兼容性</li>
+<li>错误『another app modified this document』已解决</li>
+</ul>
+
+
+<p>我们相信你一定会爱上镜像功能。如果在使用过程中遇到任何 bug，可以在我们的 Github 页面帮助提交修改，相关文档也已更新。</p>
+
+<p>Framer Studio 1.7将提供免费升级，目前已开发下载。</p>
+]]></content>
+  </entry>
+  
+</feed>

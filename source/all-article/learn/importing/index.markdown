@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-<p style="color:red">翻译：亭决 校对：龙抓槐守望者、镇雷 排版：小和</p>
+<p style="color:4cb4ec">翻译：亭决 校对：龙抓槐守望者、镇雷 排版：Daniel</p>
 
 
 ### 概述

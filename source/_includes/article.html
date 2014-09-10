@@ -1,9 +1,9 @@
 {% if index %}
   {% unless page.no_header %}
   <li class="entry {% if first == 'true' %}first-entry{% endif %}">
-    <h2 class="entry-title">
+      <h2 class="entry-title">
 
-    </h2>
+      </h2>
     {% if first == 'true' %}
       <div class="entry-content">{{ content | excerpt }}</div>
       {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
@@ -18,8 +18,7 @@
 {% else %}
   {% unless page.no_header %}
     <header>
-      <div class="back"><a href="/" onclick="history.go(-1);return false;">← Back</a></div>
-      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+
     </header>
   {% endunless %}
   <div class="entry-content">{{ content }}</div>

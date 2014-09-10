@@ -3,10 +3,7 @@ layout: default
 ---
 
 {% assign index = true %}
-<header>
-  <div class="back">　</div>
-  <h1 class="entry-title"><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-</header>
+
 <ul class="blog-index">
   {% for post in paginator.posts %}
     {% assign first = 'false' %}

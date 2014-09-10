@@ -4,7 +4,7 @@
 
 #main {
   > .content {
-    max-width: 800px;
+    max-width: 1200px;
     padding: 1em 0em 8em 20.5em;
 //    @include transition(.5s);
   }
@@ -57,6 +57,12 @@
     right: 1em;
     top: 6em;
     width: 10em;
+  }
+  ul {list-style: none;}
+  li{
+    .choosen{
+      color: #fff;
+    }
   }
 }
 

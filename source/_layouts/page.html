@@ -5,8 +5,8 @@ layout: default
 <article role="article">
   {% if page.title %}
   <header>
-    <div class="back"><a href="/" onclick="history.go(-1);return false;">← Back</a></div>
-    <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+
+      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
   </header>
   {% endif %}
   <div class="entry-content">{{ content }}</div>

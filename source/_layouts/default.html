@@ -30,7 +30,7 @@
 <script>
     $(document).ready(function(){
 
-        console.log($(document).width());
+
        if($(document).width() < 600)
        {
            console.log(2);
@@ -42,6 +42,12 @@
                }
            });
        }
+
+       $("#sidebar li a").click(function(){
+           console.log($(this).index());
+           console.log("1");
+           $("#sidebar li").eq($(this).index()).addClass("choosen").siblings().removeClass("choosen");
+       })
 
 
     });

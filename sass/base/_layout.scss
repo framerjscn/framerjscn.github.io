@@ -5,7 +5,7 @@
 #main {
   > .content {
     max-width: 1200px;
-    padding: 1em 0em 8em 10.5em;
+    padding: 1em 0em 8em 20.5em;
 //    @include transition(.5s);
   }
   > footer {
@@ -20,6 +20,9 @@
 .entry-content {
   p img {
     max-width: 100%;
+  }
+  a{
+    border-bottom: none;
   }
 }
 
@@ -137,7 +140,7 @@ li.entry {
   #sidebar, #sidebar.open {
     + #main {
       > .content {
-        padding: 1em 0em 8em 10.5em;
+        padding: 1em 0em 8em 20.5em;
       }
       > footer > .content {
         padding: 2em 5.5em 0 10.5em;
@@ -258,6 +261,7 @@ li.entry {
 .first_page{
   text-align: center;
   background:url("../images/background.png") no-repeat 100px 0px;
+  margin-left: -10em;
 }
 
 .first_page ul{list-style: none;}

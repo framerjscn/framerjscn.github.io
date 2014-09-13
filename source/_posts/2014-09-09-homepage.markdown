@@ -18,7 +18,7 @@ categories:
         <li>
             <h3>Study</h3>
             <ul class="study">
-                <li><a href="{{ root_url }}/all-article/Basic/basics">Framer.JS 基础</a></li>
+          <li><a href="{{ root_url }}/all-article/Basic/basics">Framer.JS 基础</a></li>
                 <li><a href="{{ root_url }}/all-article/Basic/importing">资源导入</a></li>
                 <li><a href="{{ root_url }}/all-article/Basic/mirror">镜像（Mirror）</a></li>
                 <li><a href="{{ root_url }}/all-article/Basic/coffeescript">CoffeeScript 简明教程</a></li>

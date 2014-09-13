@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-12T23:17:19+08:00</updated>
+  <updated>2014-09-13T16:50:26+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -18,7 +18,72 @@
     <link href="http://framerjscn.github.io/blog/2014/09/09/homepage/"/>
     <updated>2014-09-09T09:34:21+08:00</updated>
     <id>http://framerjscn.github.io/blog/2014/09/09/homepage</id>
-    <content type="html"><![CDATA[<p><img src="http://framerjscn.github.io/images/homepage.png"></p>
+    <content type="html"><![CDATA[<div class="first_page">
+<header class="First">
+    <h2>Farmer中文网</h2>
+    <p>Farmer是一个设计可交互动效的软件，可快速导入Photoshop、Sketch中的图像并模拟图层分层，支持手势，可再手机或平板中预览</p>
+
+</header>
+
+<div>
+    <ul class="first_page_guide">
+        <li>
+            <h3>Study</h3>
+            <ul class="study">
+                <li><a href="http://framerjscn.github.io/all-article/Basic/basics">Framer.JS 基础</a></li>
+                <li><a href="http://framerjscn.github.io/all-article/Basic/importing">资源导入</a></li>
+                <li><a href="http://framerjscn.github.io/all-article/Basic/mirror">镜像（Mirror）</a></li>
+                <li><a href="http://framerjscn.github.io/all-article/Basic/coffeescript">CoffeeScript 简明教程</a></li>
+                <li><a href="http://framerjscn.github.io/all-article/Basic/resources/" target="_blank">默认对象(Defaults)</a></li>
+            </ul>
+        </li>
+        <li>
+            <h3>File</h3>
+            <ul class="file">
+                <li><a href="http://framerjs.com/docs.html#layers" target="_blank">图层(Layers)</a></li>
+                <li><a href="http://framerjs.com/docs.html#animations" target="_blank">动画(Animations)</a></li>
+                <li><a href="http://framerjs.com/docs.html#events" target="_blank">事件(Events)</a></li>
+                <li><a href="http://framerjs.com/docs.html#utilities" target="_blank">函数库(Utilities)</a></li>
+                <li><a href="http://framerjs.com/docs.html#defaults" target="_blank">默认对象(Defaults)</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="main_member">
+        <h3>主要成员</h3>
+        <p>我和我的小伙伴们翻译了Framer,并建立了这个网站。这是我们翻译的第一个软件，也是国内第一个Framer中文网，希望我们的努力成果能对你学习Farmer有所帮助!</p>
+        <ul class="member_list">
+            <li>
+                <a href="http://leonpd.lofter.com">
+                    <img src="../images/镇雷.png" alt="镇雷"/>
+
+                <p>镇雷</p>
+                </a></li>
+            <li>
+                <a href="http://infoier.com">
+                <img src="../images/tingjue.png" alt="亭决"/>
+                <p>亭决</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.ftium4.com ">
+                <img src="../images/longzhua.png" alt="龙爪槐守望者"/>
+                <p>龙爪槐守望者</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://likelight.github.io/"><img src="../images/caoyou.png" alt="likelight"/>
+                <p>likelight</p>
+                </a>
+            </li>
+            <li><a href="http://danielue.com">
+                <img src="../images/Daniel.png" alt="Danie"/>
+                <p>Daniel</p>
+            </a></li>
+           </ul>
+      </div>
+</div>
+</div>
+
 ]]></content>
   </entry>
   

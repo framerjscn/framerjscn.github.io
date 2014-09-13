@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-13T16:50:26+08:00</updated>
+  <updated>2014-09-13T18:30:27+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -30,7 +30,7 @@
         <li>
             <h3>Study</h3>
             <ul class="study">
-                <li><a href="http://framerjscn.github.io/all-article/Basic/basics">Framer.JS 基础</a></li>
+          <li><a href="http://framerjscn.github.io/all-article/Basic/basics">Framer.JS 基础</a></li>
                 <li><a href="http://framerjscn.github.io/all-article/Basic/importing">资源导入</a></li>
                 <li><a href="http://framerjscn.github.io/all-article/Basic/mirror">镜像（Mirror）</a></li>
                 <li><a href="http://framerjscn.github.io/all-article/Basic/coffeescript">CoffeeScript 简明教程</a></li>

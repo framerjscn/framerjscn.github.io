@@ -4,7 +4,7 @@
   <title><![CDATA[Framer 中文网]]></title>
   <link href="http://framerjscn.github.io/atom.xml" rel="self"/>
   <link href="http://framerjscn.github.io/"/>
-  <updated>2014-09-16T22:17:44+08:00</updated>
+  <updated>2014-09-16T22:22:20+08:00</updated>
   <id>http://framerjscn.github.io/</id>
   <author>
     <name><![CDATA[Framer 中文翻译团队]]></name>
@@ -25,7 +25,7 @@
 }
 </style>
 <header class="First">
-    <h2>Framer中文网1</h2>
+    <h2>Framer中文网</h2>
     <p>Framer是一个设计可交互动效的软件，可快速导入Photoshop、Sketch中的图像并模拟图层分层，支持手势，可再手机或平板中预览</p>
 
 </header>

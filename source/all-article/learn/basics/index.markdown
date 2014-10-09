@@ -24,7 +24,6 @@ footer: true
 
 ### 层级
 
-Layers can contain other layers. We call these subLayers.
 图层中所包含嵌套的其他图层称为子图层（SubLayers），子图层继承自父图层。当然，设计师也可以根据需要调整图层之间的层级关系。
 比如：如果你将父图层的的透明度变为0.5，其他所有子图层的透明度都将有被设置为透明度0.5。
 一个图层的坐标基于它的父图层，也就是说如果一个图层的x，y坐标都是0，它的位置将在父图层的左上角。
@@ -60,7 +59,6 @@ Layers can contain other layers. We call these subLayers.
 	})
 
 ### 样式
-Because Framer runs in the browser, you can simply use html and css to style any layer. 
 Framer运行在浏览器中，因此可以很容易地使用html和css规定图层和样式，如通过 somelayer.html = "hello" 来设置图层的 html 内容。
 而通过编辑图层属性参数，相当于添加 css 样式：layer.style.backgroundColor = "red" or layer.style['background-color'] = "red", 或者像后面的例子一样，一次性修改不同的参数。
 

@@ -10,7 +10,6 @@ footer: true
 
 
 ### 概述
-The importer lets you import Sketch or Photoshop documents directly into Framer. 
 你可以直接导入Sketch或者Photoshop的文件到Framer，
 
 Framer允许直接从 Sketch 或 Photoshop 中导入素材，所有图层组都能够被调用，并且图层层级保持原状。
